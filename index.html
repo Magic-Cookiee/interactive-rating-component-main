@@ -17,14 +17,13 @@
 <body>
   <main>
   <div class="rating-state rating-state-visibility">
-    <!-- Rating state start -->
     <div class="circle"><img class="starr" src="images/icon-star.svg" alt=""></div>
     <h1>How did we do?</h1>
     <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
         <div class="rating">
-            <input type="radio" name="rating" id="ratingNone" value="0" disabled checked>
-            <label class="hidden-circle" for="ratingNone"></label>
+            <input name="rating" type="radio" id="star0" value="0" disabled checked>
+            <label class="hidden-circle" for="star0">0</label>
             <input name="rating" type="radio" id="star1" value="1">
             <label class="circle" for="star1">1</label>
             <input name="rating" type="radio" id="star2" value="2">
@@ -38,25 +37,18 @@
           </div>
     <button id="submit-btn">SUBMIT</button>
   </div>
-  <!-- Rating state end -->
   <div class="rating-state thankyou-state">
-  <!-- Thank you state start -->
   <div class="thankyou-img"><img src="images/illustration-thank-you.svg" alt=""></div>
   <p class="value-of-rating">You selected 0 out of 5</p>
-
   <h2>Thank you!</h2>
-
   <p>We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!</p>
-
-  <!-- Thank you state end -->
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Krzysztof Graczyk</a>.
   </div>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>
