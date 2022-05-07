@@ -50,10 +50,6 @@ p, .rating {
     margin: 20px 0 20px 20px;
 }
 
-.hidden-circle {
-    display: none;
-}
-
 .circle {
     display: flex;
     justify-content: center;
