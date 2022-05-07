@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    font-family: 'Overpass', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+p, .rating {
+    color: var(--MediumGrey);
+    font-size: 15px;
+    line-height: 1.7em;
+    margin-bottom: 35px;
+}
+
+.rating-state {
+    background: -webkit-radial-gradient(top, #252E37 -15%, #121517 103% );
+    background: -moz-radial-gradient(bottom, #121517, #252E37);
+    background: radial-gradient( top, #121517, #252E37);
+    height: 450px;
+    width: 450px;
+    position: relative;
+    color: var(--White);
+    border-radius: 1.75em;
+    padding: 40px;
+}
+
+.star {
+    margin: 20px 0 20px 20px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--DarkBlue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+}
+
+.circle:hover {
+    background-color: var(--lightGrey);
+    color: var(--White);
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    padding: 35px 0 10px 0;
+}
+
+button {
+    width: 370px;
+    height: 50px;
+    margin: 0 auto;
+    color: var(--White);
+    background-color: var(--Orange);
+    letter-spacing: 3px;
+    border-radius: 100px;
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+button:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+input[type="radio"]:checked + .circle{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.thankyou-state {
+    text-align: center;
+    display: none;
+}
+
+.rating-state-visibility {
+    display: block;
+}
+
+.value-of-rating {
+    background-color: var(--DarkBlue);
+    color: var(--Orange);
+    border-radius: 120px;
+    padding: 6px 0 4px 0;
+    margin: 20px 90px 30px 90px;
+}
+
+h2 {
+    margin-bottom: 14px;
+}
+
+@media (max-width: 600px) {
+    .rating-state {
+        height: 441px;
+        width: 360px;
+        padding: 25px;
+    }
+    button {
+        width: 315px;
+    }
+    .value-of-rating {
+        margin: 20px 50px 30px 50px;
+    }
+}
