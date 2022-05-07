@@ -89,6 +89,7 @@ button {
     border-radius: 100px;
     font-size: 1.05em;
     font-weight: 700;
+    border: none;
 }
 
 button:hover {
