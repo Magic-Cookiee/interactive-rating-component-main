@@ -124,7 +124,6 @@ input[type="radio"]:checked + .circle{
 h2 {
     margin-bottom: 14px;
 }
-
 @media (max-width: 600px) {
     .rating-state {
         height: 441px;
